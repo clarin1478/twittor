@@ -12,7 +12,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 // 3. Creamos el app shell (corazón de nuestra aplicación)
 const APP_SHELL = [
 
-    '/',
+    // '/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',

@@ -1,7 +1,19 @@
 
+// Miramos si estamos en Desarrollo o en Producción
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
+
+
+
+
 // 1. Instalamos el service workser si el navegador lo permite
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js')
+
+    if ( url.includes('localhost')) {
+        swLocation = '/sw.js';
+    }
+    
+    navigator.serviceWorker.register(swLocation);
 }
 
 
